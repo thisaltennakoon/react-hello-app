@@ -8,7 +8,7 @@ export default defineConfig({
       entry: 'src/index.js',
       name: 'ReactHelloLib',
       formats: ['es', 'umd'],
-      fileName: (format) => `react-hello-lib.${format}.js`
+      fileName: (format) => `ReactHelloLib.${format}.js`
     },
     rollupOptions: {
       // externalize deps
