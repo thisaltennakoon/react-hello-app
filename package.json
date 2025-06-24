@@ -1,12 +1,12 @@
 {
-  "name": "ReactHelloLib",
+  "name": "react-hello-lib",
   "version": "1.0.2",
-  "main": "dist/ReactHelloLib.umd.js",
-  "module": "dist/ReactHelloLib.es.js",
+  "main": "dist/react-hello-lib.umd.js",
+  "module": "dist/react-hello-lib.es.js",
   "exports": {
     ".": {
-      "import": "./dist/ReactHelloLib.es.js",
-      "require": "./dist/ReactHelloLib.umd.js"
+      "import": "./dist/react-hello-lib.es.js",
+      "require": "./dist/react-hello-lib.umd.js"
     }
   },
   "types": "dist/index.d.ts",
