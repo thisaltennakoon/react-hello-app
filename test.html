@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/react@18.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js"></script>
+  <script src="/Users/thisal/Desktop/wso2/Repos/react-hello-app/dist/react-hello-lib.umd.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const rootElement = document.getElementById('root');
+    // React 18 way
+    const root = ReactDOM.createRoot(rootElement);
+    // Use default export
+    root.render(React.createElement(ReactHelloLib.default));
+    // Or, named export:
+    // root.render(React.createElement(ReactHelloLib.HelloWorld));
+  </script>
+</body>
+</html>

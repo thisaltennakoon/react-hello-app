@@ -11,7 +11,6 @@ export default defineConfig({
       fileName: (format) => `react-hello-lib.${format}.js`
     },
     rollupOptions: {
-      // externalize deps
       external: ['react', 'react-dom'],
       output: {
         globals: {
@@ -20,5 +19,9 @@ export default defineConfig({
         }
       }
     }
+  },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
+    process: '{}', // if needed, but usually NODE_ENV is enough
   }
 })
